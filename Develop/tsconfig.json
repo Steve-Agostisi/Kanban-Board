@@ -8,7 +8,8 @@
     "esModuleInterop": true, // Enable compatibility with CommonJS modules
     "lib": ["dom", "es2020"], // Include DOM and modern JavaScript libraries
     "allowJs": true, // Allow JavaScript files in the project
-    "skipLibCheck": true // Skip type checking of declaration files
+    "skipLibCheck": true, // Skip type checking of declaration files
+    "removeComments": true // Remove comments from the compiled output
   },
   "include": ["src/**/*"], // Include all files in the "src" folder
   "exclude": ["node_modules", "dist"] // Exclude dependencies and output folder
