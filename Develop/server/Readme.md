@@ -1,7 +1,6 @@
 # Kanban Board Application
 
 A full-stack Kanban Board application for task management, built with a **React** frontend, **Node.js/Express** backend, and **PostgreSQL** database.
-
 ---
 
 ## Features
