@@ -1,4 +1,4 @@
-import  jwtDecode  from 'jwt-decode';
+import { jwtDecode } from 'jwt-decode';
 
 interface UserLogin {
   username: string;
@@ -11,15 +11,10 @@ interface JwtPayload {
 
 class AuthService {
   getProfile() {
-    try {
-      const token = this.getToken();
-      return token ? jwtDecode<JwtPayload>(token) : null;
-    } catch (error) {
-      console.error('Error decoding token:', error);
-      return null;
-    }
+    // Return the decoded token
+    const token = this.getToken();
+    return token ? jwtDecode<JwtPayload>(token) : null;
   }
-
 
   loggedIn() {
     // Check if the user is logged in
